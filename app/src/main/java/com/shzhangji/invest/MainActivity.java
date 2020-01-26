@@ -1,11 +1,11 @@
 package com.shzhangji.invest;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.shzhangji.invest.MESSAGE";
@@ -21,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = findViewById(R.id.editText);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void editFundRecord(View view) {
+        Intent intent = new Intent(this, FundRecordEditActivity.class);
         startActivity(intent);
     }
 }

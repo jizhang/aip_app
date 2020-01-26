@@ -2,4 +2,7 @@
     <string name="app_name">Invest</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+    <string name="main_button_edit_fund_record">Edit Fund Record</string>
+    <string name="fund_record_edit_text_confirm_date">确认日期</string>
+    <string name="fund_record_edit_text_net_value">确认净值</string>
 </resources>
