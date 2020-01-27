@@ -3,6 +3,13 @@
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
     <string name="main_button_edit_fund_record">Edit Fund Record</string>
+
+    <string name="fund_record_edit_text_fund_code">基金名称</string>
     <string name="fund_record_edit_text_confirm_date">确认日期</string>
+    <string name="fund_record_edit_hint_confirm_date">请选择确认日期</string>
+    <string name="fund_record_edit_text_amount">确认金额</string>
     <string name="fund_record_edit_text_net_value">确认净值</string>
+    <string name="fund_record_edit_text_share">确认份额</string>
+    <string name="fund_record_edit_text_fee">手续费</string>
+    <string name="fund_record_edit_button_save">保存</string>
 </resources>
