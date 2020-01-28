@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
@@ -51,7 +52,7 @@ public class FundRecordEditActivity extends AppCompatActivity {
             this.callback = callback;
         }
 
-        @Override
+        @Override @NonNull
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             int year = calendar.get(Calendar.YEAR);
             int month = calendar.get(Calendar.MONTH);

@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FundRecordEditActivity.class);
         startActivity(intent);
     }
+
+    public void listFunds(View view) {
+        Intent intent = new Intent(this, FundListActivity.class);
+        startActivity(intent);
+    }
 }
