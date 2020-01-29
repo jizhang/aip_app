@@ -11,6 +11,9 @@
     <string name="fund_list_text_label_fund">名称/总资产</string>
     <string name="fund_list_text_label_profit">持有收益</string>
 
+    <string name="fund_edit_action_search">搜索</string>
+    <string name="fund_edit_hint_search">请输入基金代码或名称</string>
+
     <string name="fund_list_text_item_1_title">博时标普500ETF联接</string>
     <string name="fund_list_text_item_1_asset">8,144.15</string>
     <string name="fund_list_text_item_1_profit">+509.83</string>
