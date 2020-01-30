@@ -77,7 +77,8 @@
         android:id="@+id/fund_list_layout_item_1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="@drawable/bg_ripple"
+        android:onClick="showFund"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fund_list_layout_label">
@@ -127,6 +128,7 @@
             android:textColor="#EF6C00"
             app:layout_constraintBaseline_toBaselineOf="@+id/fund_list_text_item_1_asset"
             app:layout_constraintEnd_toEndOf="parent" />
+
         <View
             android:layout_width="0dp"
             android:layout_height="0.5dp"
