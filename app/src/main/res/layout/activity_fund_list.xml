@@ -114,7 +114,7 @@
             android:layout_marginEnd="16dp"
             android:text="@string/fund_list_text_item_1_profit"
             android:textAlignment="textEnd"
-            android:textColor="#EF6C00"
+            android:textColor="@color/textUp"
             app:layout_constraintBaseline_toBaselineOf="@+id/fund_list_text_item_1_title"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -125,7 +125,7 @@
             android:layout_marginEnd="16dp"
             android:text="@string/fund_list_text_item_1_rate"
             android:textAlignment="textEnd"
-            android:textColor="#EF6C00"
+            android:textColor="@color/textUp"
             app:layout_constraintBaseline_toBaselineOf="@+id/fund_list_text_item_1_asset"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -179,7 +179,7 @@
             android:layout_marginEnd="16dp"
             android:text="@string/fund_list_text_item_2_profit"
             android:textAlignment="textEnd"
-            android:textColor="#EF6C00"
+            android:textColor="@color/textUp"
             app:layout_constraintBaseline_toBaselineOf="@+id/fund_list_text_item_2_title"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -190,7 +190,7 @@
             android:layout_marginEnd="16dp"
             android:text="@string/fund_list_text_item_2_rate"
             android:textAlignment="textEnd"
-            android:textColor="#EF6C00"
+            android:textColor="@color/textUp"
             app:layout_constraintBaseline_toBaselineOf="@+id/fund_list_text_item_2_asset"
             app:layout_constraintEnd_toEndOf="parent" />
         <View
@@ -243,7 +243,7 @@
             android:layout_marginEnd="16dp"
             android:text="@string/fund_list_text_item_3_profit"
             android:textAlignment="textEnd"
-            android:textColor="#2E7D32"
+            android:textColor="@color/textDown"
             app:layout_constraintBaseline_toBaselineOf="@+id/fund_list_text_item_3_title"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -254,7 +254,7 @@
             android:layout_marginEnd="16dp"
             android:text="@string/fund_list_text_item_3_rate"
             android:textAlignment="textEnd"
-            android:textColor="#2E7D32"
+            android:textColor="@color/textDown"
             app:layout_constraintBaseline_toBaselineOf="@+id/fund_list_text_item_3_asset"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

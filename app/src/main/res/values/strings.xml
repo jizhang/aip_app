@@ -29,6 +29,23 @@
     <string name="fund_list_text_item_3_profit">-16.58</string>
     <string name="fund_list_text_item_3_rate">-0.14%</string>
 
+    <string name="fund_view_text_total_amount">总金额</string>
+    <string name="fund_view_text_total_amount_value">8,144.15</string>
+    <string name="fund_view_text_profit">持有收益</string>
+    <string name="fund_view_text_profit_value">+509.83</string>
+    <string name="fund_view_text_xirr">XIRR 收益率</string>
+    <string name="fund_view_text_xirr_value">+6.68%</string>
+    <string name="fund_view_text_net_value">最新净值</string>
+    <string name="fund_view_text_net_value_value">2.5763(01-22)</string>
+    <string name="fund_view_text_share">持有份额</string>
+    <string name="fund_view_text_share_value">3,161.18</string>
+    <string name="fund_view_text_net_value_chart">净值走势</string>
+    <string name="fund_view_text_profit_chart">收益统计</string>
+    <string name="fund_view_text_record_list">交易记录</string>
+    <string name="fund_view_button_record_buy">买入记录</string>
+    <string name="fund_view_button_record_sell">卖出记录</string>
+    <string name="fund_view_button_record_bosnus">分红记录</string>
+
     <string name="fund_record_edit_text_fund_code">基金名称</string>
     <string name="fund_record_edit_text_confirm_date">确认日期</string>
     <string name="fund_record_edit_hint_confirm_date">请选择确认日期</string>
