@@ -8,6 +8,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.shzhangji.invest.fundview.FundViewActivity;
+
 public class FundListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

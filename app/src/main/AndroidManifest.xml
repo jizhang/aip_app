@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".FundViewActivity"
+            android:name=".fundview.FundViewActivity"
             android:parentActivityName=".FundListActivity" />
         <activity
             android:name=".FundEditActivity"
