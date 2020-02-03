@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/fund_view_holder_profit_chart"
         android:layout_width="0dp"
-        android:layout_height="240dp"
+        android:layout_height="260dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
