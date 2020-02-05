@@ -7,10 +7,10 @@ assignees: ''
 
 ---
 
-**Summary**
+## Summary
 
-**Steps to reproduce**
+## Steps to Reproduce
 
-**Expected results**
+## Expected Results
 
-**Actual results**
+## Actual Results
