@@ -4,10 +4,20 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowBackground">@color/background</item>
+        <item name="android:textSize">@dimen/textSize</item>
     </style>
     <style name="ToggleButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="rippleColor">@color/ripple</item>
         <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/textSmall</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingTop">@dimen/marginSmall</item>
+        <item name="android:paddingBottom">@dimen/marginSmall</item>
+        <item name="android:paddingStart">@dimen/margin</item>
+        <item name="android:paddingEnd">@dimen/margin</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
     </style>
     <style name="FundViewTheme" parent="AppTheme">
         <item name="android:actionOverflowButtonStyle">@style/FundViewOverFlow</item>

@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
@@ -81,13 +82,17 @@ public class NetValueChartFragment extends Fragment {
     }
 
     private void configYAxis(LineChart chart) {
-        chart.getAxisRight().setEnabled(false);
-        chart.getAxisLeft().setValueFormatter(new ValueFormatter() {
+        YAxis left = chart.getAxisLeft();
+        left.setDrawAxisLine(false);
+        left.setValueFormatter(new ValueFormatter() {
             @Override
             public String getFormattedValue(float value) {
                 return String.format("%+.2f%%", value * 100);
             }
         });
+
+        YAxis right = chart.getAxisRight();
+        right.setEnabled(false);
     }
 
     private void configLegend(LineChart chart) {
