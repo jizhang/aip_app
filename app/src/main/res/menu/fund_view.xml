@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/fund_view_action_record_buy"
+        android:title="@string/fund_view_action_record_buy"
+        app:showAsAction="never"/>
+    <item android:id="@+id/fund_view_action_record_sell"
+        android:title="@string/fund_view_action_record_sell"
+        app:showAsAction="never"/>
+    <item android:id="@+id/fund_view_action_record_bonus"
+        android:title="@string/fund_view_action_record_bonus"
+        app:showAsAction="never"/>
+</menu>

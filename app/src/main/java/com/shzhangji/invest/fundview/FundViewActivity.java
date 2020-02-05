@@ -1,8 +1,10 @@
 package com.shzhangji.invest.fundview;
 
 import android.os.Bundle;
+import android.view.Menu;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -19,14 +21,21 @@ public class FundViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fund_view);
 
-        getSupportActionBar().setTitle("博时标普500ETF联接");
-        getSupportActionBar().setSubtitle("050025");
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("博时标普500ETF联接");
+        actionBar.setSubtitle("050025");
 
         ViewPager2 viewPager = findViewById(R.id.fund_view_pager);
         viewPager.setAdapter(new PagerAdapter(this));
 
         TabLayout tabLayout = findViewById(R.id.fund_view_tabs);
         new TabLayoutMediator(tabLayout, viewPager, this::configTab).attach();
+    }
+
+    @Override
+    public boolean onCreatePanelMenu(int featureId, Menu menu) {
+        getMenuInflater().inflate(R.menu.fund_view, menu);
+        return true;
     }
 
     public static class PagerAdapter extends FragmentStateAdapter {

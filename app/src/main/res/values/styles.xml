@@ -9,4 +9,10 @@
         <item name="rippleColor">@color/ripple</item>
         <item name="backgroundTint">@android:color/transparent</item>
     </style>
+    <style name="FundViewTheme" parent="AppTheme">
+        <item name="android:actionOverflowButtonStyle">@style/FundViewOverFlow</item>
+    </style>
+    <style name="FundViewOverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_add_white_24dp</item>
+    </style>
 </resources>

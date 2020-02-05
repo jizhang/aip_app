@@ -29,6 +29,9 @@
     <string name="fund_list_text_item_3_profit">-16.58</string>
     <string name="fund_list_text_item_3_rate">-0.14%</string>
 
+    <string name="fund_view_action_record_buy">买入记录</string>
+    <string name="fund_view_action_record_sell">卖出记录</string>
+    <string name="fund_view_action_record_bonus">分红记录</string>
     <string name="fund_view_text_total_amount">总金额</string>
     <string name="fund_view_text_total_amount_value">8,144.15</string>
     <string name="fund_view_text_profit">持有收益</string>
@@ -48,9 +51,6 @@
     <string name="fund_view_button_period_6_months">近半年</string>
     <string name="fund_view_button_period_1_year">近一年</string>
     <string name="fund_view_button_period_3_years">近三年</string>
-    <string name="fund_view_button_record_buy">买入记录</string>
-    <string name="fund_view_button_record_sell">卖出记录</string>
-    <string name="fund_view_button_record_bonus">分红记录</string>
 
     <string name="fund_record_edit_text_fund_code">基金名称</string>
     <string name="fund_record_edit_text_confirm_date">确认日期</string>
