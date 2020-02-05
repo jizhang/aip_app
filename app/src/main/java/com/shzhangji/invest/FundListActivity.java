@@ -4,8 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.shzhangji.invest.fundview.FundViewActivity;
 
 public class FundListActivity extends AppCompatActivity {
     @Override
@@ -28,5 +31,10 @@ public class FundListActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void showFund(View view) {
+        Intent intent = new Intent(this, FundViewActivity.class);
+        startActivity(intent);
     }
 }

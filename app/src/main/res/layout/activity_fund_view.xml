@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fundview.FundViewActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fund_view_layout_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/fund_view_text_total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/fund_view_text_total_amount"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fund_view_text_total_amount_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/fund_view_text_total_amount_value"
+                android:textAlignment="center"
+                android:textColor="@color/textPrimary"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/fund_view_text_total_amount"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/fund_view_text_total_amount"
+                app:layout_constraintTop_toBottomOf="@+id/fund_view_text_total_amount" />
+
+            <TextView
+                android:id="@+id/fund_view_text_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/fund_view_text_profit"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/fund_view_guide_center_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fund_view_text_total_amount_value" />
+
+            <TextView
+                android:id="@+id/fund_view_text_xirr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fund_view_text_xirr"
+                android:textAlignment="center"
+                app:layout_constraintBaseline_toBaselineOf="@+id/fund_view_text_profit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/fund_view_guide_center_1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/fund_view_guide_center_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/fund_view_text_profit_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/fund_view_text_profit_value"
+                android:textAlignment="center"
+                android:textColor="@color/textUp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/fund_view_text_profit"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/fund_view_text_profit"
+                app:layout_constraintTop_toBottomOf="@+id/fund_view_text_profit" />
+
+            <TextView
+                android:id="@+id/fund_view_text_xirr_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fund_view_text_xirr_value"
+                android:textAlignment="center"
+                android:textColor="@color/textUp"
+                android:textSize="16sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/fund_view_text_profit_value"
+                app:layout_constraintEnd_toEndOf="@+id/fund_view_text_xirr"
+                app:layout_constraintStart_toStartOf="@+id/fund_view_text_xirr" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fund_view_text_total_amount_value" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fund_view_text_profit_value">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/fund_view_guide_center_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <TextView
+                    android:id="@+id/fund_view_text_net_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/fund_view_text_net_value"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/fund_view_text_net_value_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/fund_view_text_net_value_value"
+                    android:textColor="@color/textPrimary"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/fund_view_text_net_value"
+                    app:layout_constraintStart_toEndOf="@+id/fund_view_text_net_value" />
+
+                <TextView
+                    android:id="@+id/fund_view_text_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/fund_view_text_share"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/fund_view_text_net_value"
+                    app:layout_constraintStart_toStartOf="@+id/fund_view_guide_center_2" />
+
+                <TextView
+                    android:id="@+id/fund_view_text_share_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/fund_view_text_share_value"
+                    android:textColor="@color/textPrimary"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/fund_view_text_share"
+                    app:layout_constraintStart_toEndOf="@+id/fund_view_text_share" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/fund_view_tabs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            app:tabRippleColor="@color/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fund_view_layout_panel" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/fund_view_pager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fund_view_tabs"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
