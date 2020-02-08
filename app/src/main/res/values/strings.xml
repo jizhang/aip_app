@@ -35,6 +35,7 @@
     <string name="fund_view_button_period_3_years">近三年</string>
 
     <string name="fund_record_edit_text_fund_code">基金名称</string>
+    <string name="fund_record_edit_hint_fund_code">请选择基金</string>
     <string name="fund_record_edit_text_confirm_date">确认日期</string>
     <string name="fund_record_edit_hint_confirm_date">请选择确认日期</string>
     <string name="fund_record_edit_text_amount">确认金额</string>

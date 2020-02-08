@@ -16,7 +16,7 @@
             android:theme="@style/FundViewTheme"/>
         <activity
             android:name=".FundEditActivity"
-            android:parentActivityName=".FundListActivity" />
+            android:parentActivityName=".FundRecordEditActivity" />
         <activity
             android:name=".FundRecordEditActivity"
             android:parentActivityName=".FundListActivity" />
