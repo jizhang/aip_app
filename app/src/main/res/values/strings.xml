@@ -1,10 +1,7 @@
 <resources>
     <string name="app_name">Invest</string>
-    <string name="edit_message">Enter a message</string>
-    <string name="button_send">Send</string>
-    <string name="main_button_edit_fund_record">Edit Fund Record</string>
-    <string name="main_button_list_funds">List Funds</string>
 
+    <string name="fund_list_title">我的基金</string>
     <string name="fund_list_action_add">添加基金账户</string>
     <string name="fund_list_text_total_asset">总资产</string>
     <string name="fund_list_text_total_asset_value">5,000,000.00</string>

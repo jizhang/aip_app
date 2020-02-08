@@ -15,6 +15,7 @@ public class FundListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fund_list);
+        getSupportActionBar().setTitle(R.string.fund_list_title);
     }
 
     @Override
