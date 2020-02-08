@@ -11,21 +11,6 @@
     <string name="fund_edit_action_search">搜索</string>
     <string name="fund_edit_hint_search">请输入基金代码或名称</string>
 
-    <string name="fund_list_text_item_1_title">博时标普500ETF联接</string>
-    <string name="fund_list_text_item_1_asset">8,144.15</string>
-    <string name="fund_list_text_item_1_profit">+509.83</string>
-    <string name="fund_list_text_item_1_rate">+6.68%</string>
-
-    <string name="fund_list_text_item_2_title">达成纳斯达克100指数</string>
-    <string name="fund_list_text_item_2_asset">10,459.29</string>
-    <string name="fund_list_text_item_2_profit">+1,072.57</string>
-    <string name="fund_list_text_item_2_rate">+11.43%</string>
-
-    <string name="fund_list_text_item_3_title">大成中证红利指数A</string>
-    <string name="fund_list_text_item_3_asset">12,024.85</string>
-    <string name="fund_list_text_item_3_profit">-16.58</string>
-    <string name="fund_list_text_item_3_rate">-0.14%</string>
-
     <string name="fund_view_action_record_buy">买入记录</string>
     <string name="fund_view_action_record_sell">卖出记录</string>
     <string name="fund_view_action_record_bonus">分红记录</string>
