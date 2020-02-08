@@ -6,6 +6,7 @@
         <item name="android:windowBackground">@color/background</item>
         <item name="android:textSize">@dimen/textSize</item>
     </style>
+
     <style name="ToggleButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="rippleColor">@color/ripple</item>
         <item name="backgroundTint">@android:color/transparent</item>
@@ -19,10 +20,16 @@
         <item name="android:minHeight">0dp</item>
         <item name="android:minWidth">0dp</item>
     </style>
+
     <style name="FundViewTheme" parent="AppTheme">
         <item name="android:actionOverflowButtonStyle">@style/FundViewOverFlow</item>
     </style>
     <style name="FundViewOverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
         <item name="android:src">@drawable/ic_add_white_24dp</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">24dp</item>
+        <item name="android:stateListAnimator">@null</item>
     </style>
 </resources>
