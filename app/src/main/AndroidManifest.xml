@@ -18,21 +18,13 @@
             android:name=".FundEditActivity"
             android:parentActivityName=".FundListActivity" />
         <activity
-            android:name=".FundListActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity
             android:name=".FundRecordEditActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".DisplayMessageActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+            android:parentActivityName=".FundListActivity" />
+        <activity android:name=".FundListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
