@@ -15,6 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.shzhangji.invest.fundview.FundViewActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +39,7 @@ public class FundListActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.fund_list_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new FundAdapter(fundList));
+        recyclerView.setAdapter(new FundAdapter(fundList, this::onItemClick));
     }
 
     @Override
@@ -54,6 +56,11 @@ public class FundListActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onItemClick(FundItem item) {
+        Intent intent = new Intent(this, FundViewActivity.class);
+        startActivity(intent);
     }
 
     @AllArgsConstructor
@@ -81,9 +88,11 @@ public class FundListActivity extends AppCompatActivity {
 
     public static class FundAdapter extends RecyclerView.Adapter<FundViewHolder> {
         private List<FundItem> items;
+        private OnItemClickListener listener;
 
-        public FundAdapter(List<FundItem> items) {
+        public FundAdapter(List<FundItem> items, OnItemClickListener listener) {
             this.items = items;
+            this.listener = listener;
         }
 
         @Override @NonNull
@@ -107,11 +116,17 @@ public class FundListActivity extends AppCompatActivity {
             int textColor = item.profit.startsWith("-") ? textDown : textUp;
             holder.profit.setTextColor(textColor);
             holder.rate.setTextColor(textColor);
+
+            holder.itemView.setOnClickListener(view -> listener.click(item));
         }
 
         @Override
         public int getItemCount() {
             return items.size();
         }
+    }
+
+    public interface OnItemClickListener {
+        void click(FundItem item);
     }
 }
