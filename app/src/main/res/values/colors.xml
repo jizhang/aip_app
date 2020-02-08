@@ -6,6 +6,7 @@
     <color name="background">#F5F5F5</color>
     <color name="ripple">#0A000000</color>
     <color name="textPrimary">#424242</color>
+    <color name="textHint">#9E9E9E</color>
     <color name="textUp">#EF6C00</color>
     <color name="textDown">#2E7D32</color>
 </resources>

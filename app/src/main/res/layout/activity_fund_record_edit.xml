@@ -34,15 +34,31 @@
             android:id="@+id/fund_record_edit_input_fund_code"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/margin"
             android:background="@android:color/transparent"
             android:ems="10"
             android:textSize="14sp"
+            android:hint="@string/fund_record_edit_hint_fund_code"
+            android:gravity="center_vertical|end"
+            android:onClick="selectFund"
+            android:focusable="false"
+            android:longClickable="false"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fund_record_edit_arrow_fund_code"
             app:layout_constraintStart_toEndOf="@+id/fund_record_edit_text_fund_code"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/fund_record_edit_arrow_fund_code"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:src="@drawable/ic_chevron_right_white_24dp"
+            android:tint="@color/textHint"
+            android:onClick="selectFund"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
         <View
             android:layout_width="0dp"
@@ -82,17 +98,30 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:background="@android:color/transparent"
             android:ems="10"
             android:focusable="false"
             android:hint="@string/fund_record_edit_hint_confirm_date"
             android:onClick="showConfirmDatePicker"
             android:textSize="14sp"
+            android:gravity="center_vertical|end"
+            android:longClickable="false"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fund_record_edit_arrow_confirm_date"
             app:layout_constraintStart_toEndOf="@+id/fund_record_edit_text_confirm_date"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/fund_record_edit_arrow_confirm_date"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:src="@drawable/ic_chevron_right_white_24dp"
+            android:tint="@color/textHint"
+            android:onClick="showConfirmDatePicker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
         <View
             android:layout_width="0dp"

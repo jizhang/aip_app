@@ -2,6 +2,7 @@ package com.shzhangji.invest;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -23,8 +24,13 @@ public class FundRecordEditActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fund_record_edit);
     }
 
+    public void selectFund(View view) {
+        Intent intent = new Intent(this, FundEditActivity.class);
+        startActivity(intent);
+    }
+
     public void showConfirmDatePicker(View view) {
-        EditText editText = (EditText) view;
+        EditText editText = findViewById(R.id.fund_record_edit_input_confirm_date);
         String dateString = editText.getText().toString();
         Calendar current = Calendar.getInstance();
         if (!TextUtils.isEmpty(dateString)) {

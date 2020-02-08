@@ -51,7 +51,7 @@ public class FundListActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.fund_list_action_add) {
-            Intent intent = new Intent(this, FundEditActivity.class);
+            Intent intent = new Intent(this, FundRecordEditActivity.class);
             startActivity(intent);
             return true;
         }
