@@ -145,22 +145,35 @@ public class NetValueChartFragment extends Fragment {
     }
 
     private List<NetValueItem> mockItems() {
-        List<NetValueItem> items = new ArrayList<>();
+        List<LocalDate> dates = new ArrayList<>();
         LocalDate currentDate = LocalDate.now().minusDays(1);
         int limit = 60;
-        Random random = new Random();
-        while (items.size() < limit) {
+        while (dates.size() < limit) {
             if (currentDate.getDayOfWeek().getValue() <= 5) {
-                NetValueItem item = new NetValueItem();
-                item.index = limit - items.size() - 1;
-                item.percent = random.nextFloat() * 0.2f - 0.1f;
-                item.netValue = 1 + random.nextFloat() * 0.5f;
-                item.date = currentDate;
-                items.add(item);
+                dates.add(currentDate);
             }
             currentDate = currentDate.minusDays(1);
         }
-        Collections.reverse(items);
+        Collections.reverse(dates);
+
+        List<NetValueItem> items = new ArrayList<>();
+        Random random = new Random();
+        for (int i = 0; i < dates.size(); ++i) {
+            NetValueItem item = new NetValueItem();
+            item.index = i;
+            item.date = dates.get(i);
+            item.netValue = 1 + i * 0.002f + random.nextFloat() * 0.04f;
+
+            if (i == 0) {
+                item.percent = 0;
+            } else {
+                float start = items.get(0).netValue;
+                item.percent = (item.netValue - start) / start;
+            }
+
+            items.add(item);
+        }
+
         return items;
     }
 }

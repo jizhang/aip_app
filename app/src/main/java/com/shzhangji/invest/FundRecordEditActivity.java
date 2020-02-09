@@ -10,6 +10,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
@@ -18,15 +19,32 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class FundRecordEditActivity extends AppCompatActivity {
+    public static final int SELECT_FUND_REQUEST = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fund_record_edit);
+
+        getSupportActionBar().setTitle(R.string.fund_record_edit_title);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == SELECT_FUND_REQUEST && resultCode == RESULT_OK) {
+            assert data != null;
+            EditText input = findViewById(R.id.fund_record_edit_input_fund_code);
+            input.setText(getString(R.string.fund_record_edit_template_fund_code,
+                    data.getStringExtra("code"),
+                    data.getStringExtra("title")));
+        }
     }
 
     public void selectFund(View view) {
-        Intent intent = new Intent(this, FundEditActivity.class);
-        startActivity(intent);
+        Intent intent = new Intent(this, FundSearchActivity.class);
+        startActivityForResult(intent, SELECT_FUND_REQUEST);
     }
 
     public void showConfirmDatePicker(View view) {

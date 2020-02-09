@@ -117,7 +117,7 @@ public class FundListActivity extends AppCompatActivity {
             holder.profit.setTextColor(textColor);
             holder.rate.setTextColor(textColor);
 
-            holder.itemView.setOnClickListener(view -> listener.click(item));
+            holder.itemView.setOnClickListener(view -> listener.onItemClick(item));
         }
 
         @Override
@@ -127,6 +127,6 @@ public class FundListActivity extends AppCompatActivity {
     }
 
     public interface OnItemClickListener {
-        void click(FundItem item);
+        void onItemClick(FundItem item);
     }
 }
