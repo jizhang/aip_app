@@ -34,6 +34,7 @@
     <string name="fund_view_button_period_1_year">近一年</string>
     <string name="fund_view_button_period_3_years">近三年</string>
 
+    <string name="fund_record_edit_title">新增买入记录</string>
     <string name="fund_record_edit_text_fund_code">基金名称</string>
     <string name="fund_record_edit_hint_fund_code">请选择基金</string>
     <string name="fund_record_edit_template_fund_code">%1$s %2$s</string>

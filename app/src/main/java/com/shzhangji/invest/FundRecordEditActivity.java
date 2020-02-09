@@ -25,6 +25,8 @@ public class FundRecordEditActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fund_record_edit);
+
+        getSupportActionBar().setTitle(R.string.fund_record_edit_title);
     }
 
     @Override
