@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FundEditActivity">
+    tools:context=".FundSearchActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/fund_edit_list"
+        android:id="@+id/fund_search_list"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
